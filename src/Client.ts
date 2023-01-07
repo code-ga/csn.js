@@ -20,7 +20,7 @@ declare module 'node:events' {
 
 export default class Client extends EventEmitter {
 
-    public sessionId: string | undefined = undefined;
+    public sessionId: string | null = null;
     public userData: AccountLoginInfo;
     public readonly clientOptions: ClientOptions = {};
 
