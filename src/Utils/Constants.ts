@@ -1,0 +1,10 @@
+export const LOGIN_ENDPOINT = "https://chiasenhac.vn/api/auth/login";
+export const GET_AUDIO_ENDPOINT = "https://chiasenhac.vn/api/listen_info_music";
+export const SEARCH_ENDPOINT = "https://chiasenhac.vn/api/search";
+export const GET_TOPCHART_ENDPOINT = "https://chiasenhac.vn/api/nhac-hot.html";
+export const ADD_FAVOURITE_ENDPOINT= "https://chiasenhac.vn/api/music/favourite";
+export const GET_PROFILE_ENDPOINT = "https://chiasenhac.vn/api/user/profile/";
+export const GET_FAVOURITE_ENDPOINT = "https://chiasenhac.vn/api/user/music_favourite";
+export const GET_HISTORY_ENDPOINT = "https://chiasenhac.vn/api/music/history_listen";
+export const GET_PLAYLIST_ENDPOINT= "https://chiasenhac.vn/api/user/playlist/";
+export const BASE_CSN_URL = "https://chiasenhac.vn"

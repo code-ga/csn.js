@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BASE_CSN_URL = exports.GET_PLAYLIST_ENDPOINT = exports.GET_HISTORY_ENDPOINT = exports.GET_FAVOURITE_ENDPOINT = exports.GET_PROFILE_ENDPOINT = exports.ADD_FAVOURITE_ENDPOINT = exports.GET_TOPCHART_ENDPOINT = exports.SEARCH_ENDPOINT = exports.GET_AUDIO_ENDPOINT = exports.LOGIN_ENDPOINT = void 0;
+exports.LOGIN_ENDPOINT = "https://chiasenhac.vn/api/auth/login";
+exports.GET_AUDIO_ENDPOINT = "https://chiasenhac.vn/api/listen_info_music";
+exports.SEARCH_ENDPOINT = "https://chiasenhac.vn/api/search";
+exports.GET_TOPCHART_ENDPOINT = "https://chiasenhac.vn/api/nhac-hot.html";
+exports.ADD_FAVOURITE_ENDPOINT = "https://chiasenhac.vn/api/music/favourite";
+exports.GET_PROFILE_ENDPOINT = "https://chiasenhac.vn/api/user/profile/";
+exports.GET_FAVOURITE_ENDPOINT = "https://chiasenhac.vn/api/user/music_favourite";
+exports.GET_HISTORY_ENDPOINT = "https://chiasenhac.vn/api/music/history_listen";
+exports.GET_PLAYLIST_ENDPOINT = "https://chiasenhac.vn/api/user/playlist/";
+exports.BASE_CSN_URL = "https://chiasenhac.vn";
