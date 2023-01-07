@@ -10,7 +10,7 @@ const Search_1 = __importDefault(require("./Classes/Search"));
 const TopChart_1 = __importDefault(require("./Classes/TopChart"));
 const User_1 = __importDefault(require("./Classes/User"));
 class Client extends node_events_1.EventEmitter {
-    sessionId = null;
+    sessionId = undefined;
     userData;
     clientOptions = {};
     search = new Search_1.default(this);
