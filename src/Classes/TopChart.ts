@@ -1,7 +1,6 @@
 import axios from "axios";
 import Client from "../Client";
 import HTTPError from "../Typings/Classes/HTTPError";
-import SongSearchData from "../Typings/Interfaces/SongSearchData";
 import TopChartGetOptions from "../Typings/Interfaces/TopChartGetOptions";
 import { GET_TOPCHART_ENDPOINT } from "../Utils/Constants";
 import Music from "./Music";

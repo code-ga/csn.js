@@ -8,4 +8,5 @@ const Client_1 = __importDefault(require("./Client"));
     const client = new Client_1.default();
     const songs = await client.search.song("Em vội quên");
     console.log(songs);
+    console.log(client.sessionId);
 })();
