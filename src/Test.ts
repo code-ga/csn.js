@@ -5,4 +5,5 @@ import Client from "./Client"
 
     const songs = await client.search.song("Em vội quên");
     console.log(songs);
+    console.log(client.sessionId);
 })();
