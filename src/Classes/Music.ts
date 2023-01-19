@@ -46,10 +46,6 @@ export default class Music {
 
     public async getAudioUrl(): Promise<FileURL[]> {
         const audioUrl: FileURL[] = [];
-        if (!this.client.sessionId && !this.client.clientOptions.noWarnings) {
-            console.log("Warning: The maximum quality if you not login is 128kbps.");
-        }
-
         const songDetails = await this.getSongDetails();
 
         songDetails.data.music.file_urls.forEach((file_url: FileURL) => {
