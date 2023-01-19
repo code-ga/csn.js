@@ -8,7 +8,7 @@
     "typescript": "^4.9.4"
   },
   "name": "csn.js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "\"A simple library to download musics from Chiasenhac.vn",
   "main": "./dist/CSN.js",
   "typings": "./typings/CSN.d.ts",
