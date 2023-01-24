@@ -11,7 +11,6 @@ class Music {
     songData;
     artist;
     coverURL;
-    downloaded;
     listened;
     title;
     constructor(client, songData) {
