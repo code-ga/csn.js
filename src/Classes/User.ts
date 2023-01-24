@@ -1,8 +1,7 @@
 import axios from "axios";
 import Client from "../Client";
 import HTTPError from "../Typings/Classes/HTTPError";
-import getListenHistoryOptions from "../Typings/Interfaces/GetListenHistoryOptions";
-import { GetListenHistoryResponse } from "../Typings/Interfaces/GetListenHistoryResponse";
+import GetListenHistoryOptions from "../Typings/Interfaces/GetListenHistoryOptions";
 import ProfileDetails from "../Typings/Interfaces/ProfileDetails";
 import { GET_FAVOURITE_ENDPOINT, GET_HISTORY_ENDPOINT, GET_PLAYLIST_ENDPOINT, GET_PROFILE_ENDPOINT } from "../Utils/Constants";
 import Music from "./Music";
@@ -97,7 +96,7 @@ export default class User {
         return response;
     }
 
-    public async getListenHistory(options: getListenHistoryOptions = { type: "music" }): Promise<GetListenHistoryResponse> {
+    public async getListenHistory(options: GetListenHistoryOptions = { type: "music" }): Promise<Music[]> {
         if (!this.client.sessionId) throw new TypeError("You are not logged in.");
 
         const historyRequest = await axios({
@@ -110,7 +109,7 @@ export default class User {
 
         if (historyRequest.status == 400 || historyRequest.data.code == 400) throw new HTTPError("Can't get resource. Server responsed with HTTP Code 400.");
 
-        const response: GetListenHistoryResponse = [];
+        const response: Music[] = [];
         const historyResponse: [] = historyRequest.data.data;
 
         historyResponse.forEach((history: any) => {

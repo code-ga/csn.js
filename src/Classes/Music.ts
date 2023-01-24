@@ -11,7 +11,6 @@ export default class Music {
 
     public artist: string;
     public coverURL: string;
-    public downloaded: number;
     public listened: number;
     public title: string;
 

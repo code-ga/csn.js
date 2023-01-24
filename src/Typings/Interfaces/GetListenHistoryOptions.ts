@@ -1,3 +1,3 @@
-export default interface getListenHistoryOptions {
+export default interface GetListenHistoryOptions {
     type: "music",
 }
