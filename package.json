@@ -10,8 +10,8 @@
   "name": "csn.js",
   "version": "0.6.2",
   "description": "\"A simple library to download musics from Chiasenhac.vn",
-  "main": "./dist/CSN.js",
-  "typings": "./typings/CSN.d.ts",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "test": "npm run build && cd dist && node Test.js",
     "build": "rm -rf dist && tsc",
