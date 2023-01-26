@@ -3,3 +3,4 @@ package-lock.json
 
 src/DebugTest.ts
 dist/DebugTest.js
+dist/

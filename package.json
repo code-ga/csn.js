@@ -13,9 +13,9 @@
   "main": "./dist/CSN.js",
   "typings": "./typings/CSN.d.ts",
   "scripts": {
-    "test": "cd dist && node Test.js",
-    "build": "tsc",
-    "debugTest": "cd dist && node DebugTest.js"
+    "test": "npm run build && cd dist && node Test.js",
+    "build": "rm -rf dist && tsc",
+    "debugTest": "npm run build && cd dist && node DebugTest.js"
   },
   "repository": {
     "type": "git",
